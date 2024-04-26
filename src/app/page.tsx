@@ -1,15 +1,16 @@
 
 import { Footer } from '@/components/Footer'
-import { Sidebar } from '@/components/Sidebar'
+import { Sidebarl } from '@/components/Sidebarl'
+import { Sidebarr } from '@/components/Sidebarr'
 import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Mic2, LayoutList, Laptop2, Volume2 } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col bg-black">
       <div className="flex flex-1">
-    <Sidebar />
-        <main className="flex-1 p-6">
+    <Sidebarl />
+            <main className="flex-1 mr- p-6">
           <div className="flex items-center gap-4">
             <button className='rounded-full bg-black/40 hover:bg-black/80 p1'><ChevronLeft /></button>
             <button className='rounded-full bg-black/40 hover:bg-black/80 p1'><ChevronRight /></button>
@@ -89,7 +90,9 @@ export default function Home() {
             
           </div>
         </main>
+        <Sidebarr />
       </div>
+
         <Footer />
     </div>
   )
